@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace JustYork\LaravelGoogleAuth\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelGoogleAuthCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-google-auth';
 
     public $description = 'My command';
 

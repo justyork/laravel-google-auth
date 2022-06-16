@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace JustYork\LaravelGoogleAuth;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use JustYork\LaravelGoogleAuth\Commands\LaravelGoogleAuthCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class LaravelGoogleAuthServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('laravel-google-auth')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_laravel-google-auth_table')
+            ->hasCommand(LaravelGoogleAuthCommand::class);
     }
 }
